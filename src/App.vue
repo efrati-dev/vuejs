@@ -11,9 +11,9 @@
         :key="entry.id"
         class="entry-item"
         >
-        <span class="entry-daytime">{{ entry [0] }} Uhr,{{ entry[1].replaceAll("/", "/" )}} </span>
-        <h3 class="entry-title">Basisbesuch BB</h3>
-        <span class="entry-description">Interessenten besuchen uns</span>
+        <span class="entry-daytime">{{ entry[0] }} Uhr,{{ entry[1].replaceAll("/", "/" )}} </span>
+        <h3 class="entry-title">{{ entry[2] }}</h3>
+        <span class="entry-description">{{ entry[3 ]}}</span>
       </li>
     </ul>
 
@@ -36,7 +36,7 @@ export default {
     return {
       title: "Welcome to Opportunity",
       currentDate:"", 
-      gsheet_url: "https://sheets.googleapis.com/v4/spreadsheets/1qLZJwuNv3QmwGhSj1wZZbuXNOkDKN-Ha7fo0Ca_uVVU/values:batchGet?ranges=A1%3AE100&valueRenderOption=FORMATTED_VALUE&key=AIzaSyBesotaNgSaTUIhrSKjEaExdi-ksKInhoE",
+      gsheet_url: "https://sheets.googleapis.com/v4/spreadsheets/1e5br5HBrDZJpBZv8GSK-Uvx0NB_bPGvJrEc1qTs18nM/values:batchGet?ranges=A1%3AE100&valueRenderOption=FORMATTED_VALUE&key=AIzaSyDHyrC7eKstmH6kMgufOY0F4VV_8qlu0Mw",
       entries: [],
     };
   },
